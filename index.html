@@ -9,9 +9,113 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  
-  
+  <div class="page">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a class="logo" href="/"><img src="img/logo.png" width="176" height="36" alt="Логотип"></a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="main-nav__wrapper">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Первая ссылка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">Вторая ссылка (активная)</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Третья ссылка</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Личный кабинет</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Выйти</a>
+          </li>
+        </ul>
+      </nav>
+    </aside><!-- /Sidebar -->
+
+    <!-- Контент -->
+    <div class="page-body">
+      <header class="header">
+        <h1 class="header__title">Заголовок страницы</h1>
+        <p class="header__desc">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+      </header>
+      <main class="content">
+        <div class="payment-info">
+          <p class="payment-info__title">Информация по оплате:</p>
+          <table class="payment-info__table">
+            <tr>
+              <th scope="row">Номер счета:</th>
+              <td>87123658716587</td>
+            </tr>
+            <tr>
+              <th scope="row">Сумма платежа</th>
+              <td>100 руб.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card-info">
+          <h2 class="card-info__title">Данные банковской карты</h2>
+          <form class="bank-card" method="post" enctype="multipart/form-data" action="/" autocomplete="off">
+            <div class="bank-card__front">
+              <div class="bank-card__number">
+                <label for="firstNum">Номер карты</label>
+                <input type="text" id="firstNum" class="input-control input-control--number" minlength="4" maxlength="4" required>
+                <input type="text" class="input-control input-control--number" minlength="4" maxlength="4" required>
+                <input type="text" class="input-control input-control--number" minlength="4" maxlength="4" required>
+                <input type="text" class="input-control input-control--number" minlength="4" maxlength="4" required>
+              </div>
+              <div class="bank-card__expiry-date">
+                <label for="month">Срок действия</label>
+                <select id="month" class="input-control input-control--select">
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option selected>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select id="year" class="input-control input-control--select">
+                  <option>2017</option>
+                  <option selected>2018</option>
+                  <option>2019</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                </select>
+              </div>
+              <div class="bank-card__name">
+                <input type="text" class="input-control input-control--name" placeholder="Держатель карты" required>
+              </div>
+            </div><!-- /bank-card__front -->
+            <div class="bank-card__back">
+              <div class="bank-card__cvc-input">
+                <label for="cvc">Код CVV2 / CVC2</label>
+                <input type="text" id="cvc" class="input-control input-control--cvc" minlength="3" maxlength="3" required>
+              </div>
+            </div><!-- /bank-card__back -->
+            <input type="submit" class="btn" value="Оплатить">
+          </form>
+        </div><!-- /card-info -->
+      </main><!-- /content -->
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+          <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+          <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+          <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+        </div>
+      </footer>
+    </div><!-- /page-body -->
+  </div><!-- /page -->
+
   <!-- Script -->
-  <script src="js/script.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>

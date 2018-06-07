@@ -5,15 +5,145 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) {
+  .page { max-width: none; }
 
+  .logo { margin: 40px 20px 40px; }
+
+  .sidebar { width: 258px; }
+
+  .main-nav__link {
+    padding: 24px 20px;
+    font-size: 16px;
+  }
+
+  .page-body { margin-left: 260px; }
+
+  .header { padding: 30px 20px 25px; }
+
+  .header__title { font-size: 30px; }
+
+  .content { padding: 35px 20px; }
+
+  .card-info__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .footer { padding: 20px; }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+  .sidebar {
+    position: relative;
+    width: auto;
+  }
 
+  .logo { margin: 20px; }
+
+  .main-nav {
+    &__toggle {
+      display: block;
+    }
+
+    &--closed &__wrapper {
+      display: none;
+    }
+
+    &--nojs &__wrapper {
+      display: block;
+      text-align: center;
+    }
+
+    &--nojs &__toggle {
+      display: none;
+    }
+
+    &__link {
+      padding: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .page-body { margin-left: auto; }
+
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header__title { font-size: 28px; }
+
+  .header__desc { width: 100%; }
+
+  .content { padding: 25px 20px; }
+
+  .payment-info {
+    width: 290px;
+    font-size: 14px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .card-info__title { font-size: 18px; }
+
+  .bank-card__back { left: 180px; }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
+  .logo { margin: 20px 15px;}
 
+  .header__title { font-size: 22px; }
+
+  .content {
+    padding: 20px 15px;
+  }
+
+  .payment-info { width: 290px; }
+
+  .input-control {
+    font-size: 14px;
+
+    &--number {
+      width: 60px;
+      margin-right: 0;
+      padding: 5px;
+    }
+  }
+
+  .card-info { text-align: center; }
+
+  .bank-card {
+    display: inline-block;
+
+    &__front,
+    &__back {
+      width: 290px;
+    }
+
+    &__back {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+
+  .btn { margin-top: 20px; }
+
+  .footer { padding: 15px; }
+
+  .footer-text p { margin-bottom: 8px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bank-card__back {
+    position: static;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .btn { margin-top: 20px; }
 }
